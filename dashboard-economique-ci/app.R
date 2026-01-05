@@ -1,10 +1,11 @@
 # dashboard-economique-ci/app.R
-# Dashboard Économique Côte d'Ivoire - Portfolio INSSEDS
+# Dashboard Économique Côte d'Ivoire - Portfolio 
 
 library(shiny)
 library(ggplot2)
 library(plotly)
 library(dplyr)
+library(DT)
 
 # Interface utilisateur
 ui <- fluidPage(
@@ -59,7 +60,7 @@ ui <- fluidPage(
   titlePanel(
     div(
       h3("📊 Dashboard Économique - Côte d'Ivoire"),
-      h5("Portfolio professionnel | Consultant Data Science & ML | INSSEDS"),
+      h5("Portfolio professionnel | Consultant Data Science & ML"),
       style = "text-align: center; margin-bottom: 30px;"
     )
   ),
@@ -76,24 +77,24 @@ ui <- fluidPage(
         
         # Sélecteur d'indicateur
         selectInput("indicateur",
-                   "Choisissez l'indicateur économique :",
-                   choices = c(
-                     "Croissance du PIB (%)" = "pib",
-                     "Taux d'Inflation (%)" = "inflation",
-                     "Dette Publique (% PIB)" = "dette",
-                     "Balance Commerciale (Milliards FCFA)" = "balance"
-                   ),
-                   selected = "pib"),
+                    "Choisissez l'indicateur économique :",
+                    choices = c(
+                      "Croissance du PIB (%)" = "pib",
+                      "Taux d'Inflation (%)" = "inflation",
+                      "Dette Publique (% PIB)" = "dette",
+                      "Balance Commerciale (Milliards FCFA)" = "balance"
+                    ),
+                    selected = "pib"),
         
         hr(),
         
         # Période
         sliderInput("periode",
-                   "Période d'analyse :",
-                   min = 2015,
-                   max = 2024,
-                   value = c(2015, 2024),
-                   sep = ""),
+                    "Période d'analyse :",
+                    min = 2015,
+                    max = 2024,
+                    value = c(2015, 2024),
+                    sep = ""),
         
         hr(),
         
@@ -101,10 +102,10 @@ ui <- fluidPage(
         h4("💼 Contact professionnel"),
         p("Pour un diagnostic data personnalisé :"),
         actionButton("btn_diagnostic", "Demander un diagnostic", 
-                    class = "btn-primary", 
-                    style = "width: 100%; margin-bottom: 10px;"),
+                     class = "btn-primary", 
+                     style = "width: 100%; margin-bottom: 10px;"),
         actionButton("btn_contact", "Voir mes coordonnées",
-                    style = "width: 100%;")
+                     style = "width: 100%;")
       )
     ),
     
@@ -190,26 +191,26 @@ server <- function(input, output, session) {
     
     # Configuration selon l'indicateur
     config <- switch(input$indicateur,
-                    "pib" = list(
-                      titre = "Évolution de la croissance du PIB",
-                      y_lab = "Croissance PIB (%)",
-                      couleur = "#2ecc71"
-                    ),
-                    "inflation" = list(
-                      titre = "Évolution du taux d'inflation",
-                      y_lab = "Inflation (%)",
-                      couleur = "#e74c3c"
-                    ),
-                    "dette" = list(
-                      titre = "Évolution de la dette publique",
-                      y_lab = "Dette publique (% PIB)",
-                      couleur = "#f39c12"
-                    ),
-                    "balance" = list(
-                      titre = "Évolution de la balance commerciale",
-                      y_lab = "Balance (Milliards FCFA)",
-                      couleur = "#3498db"
-                    ))
+                     "pib" = list(
+                       titre = "Évolution de la croissance du PIB",
+                       y_lab = "Croissance PIB (%)",
+                       couleur = "#2ecc71"
+                     ),
+                     "inflation" = list(
+                       titre = "Évolution du taux d'inflation",
+                       y_lab = "Inflation (%)",
+                       couleur = "#e74c3c"
+                     ),
+                     "dette" = list(
+                       titre = "Évolution de la dette publique",
+                       y_lab = "Dette publique (% PIB)",
+                       couleur = "#f39c12"
+                     ),
+                     "balance" = list(
+                       titre = "Évolution de la balance commerciale",
+                       y_lab = "Balance (Milliards FCFA)",
+                       couleur = "#3498db"
+                     ))
     
     # Création du graphique
     p <- ggplot(data, aes(x = annee, y = .data[[input$indicateur]])) +
