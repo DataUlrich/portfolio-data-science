@@ -7,6 +7,7 @@
 ## 🎓 Formation
 - **Master Pro Data Science - IA** - INSSEDS (en cours)  
 - **Ingénierie Statistique & Data Science** - INSSEDS
+- **Licence Statistique et Economie Appliquée** - UIST
 
 ---
 
