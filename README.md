@@ -1,4 +1,4 @@
-# 👋 Consultant Data Science & Machine Learning | INSSEDS
+# 👋 Consultant Data Science & Machine Learning 
 
 > 🚀 Je transforme vos données en décisions stratégiques grâce à l'analyse de données, dashboards interactifs et modèles prédictifs.
 
