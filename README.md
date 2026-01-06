@@ -23,7 +23,9 @@
 | **📈 Dashboard Personnalisé** | 2 semaines | À partir de 300 000 FCFA |
 | **🤖 Modèle Prédictif ML** | 3–4 semaines | À partir de 600 000 FCFA |
 
-### Exemples d’applications
+---
+
+## 🧠 Cas d’usage maîtrisés
 - 📈 Analyse des ventes et prévision de la demande  
 - 🎯 Scoring client et détection d’anomalies  
 - 📊 Dashboards interactifs pour le pilotage des KPI  
@@ -36,7 +38,7 @@
 ### 📊 Dashboard Économique – Côte d’Ivoire (**Version Live**)
 👉 https://ulrich-kouassi.shinyapps.io/dashboard-economique-ci/
 
-Dashboard interactif présentant des indicateurs économiques clés de la Côte d’Ivoire, conçu comme démonstration professionnelle.
+Dashboard interactif présentant des indicateurs économiques clés de la Côte d’Ivoire, conçu comme démonstration professionnelle pour l’aide à la décision.
 
 **Technologies utilisées :**  
 `R` · `Shiny` · `ggplot2` · `plotly` · `DT` · `dplyr`
@@ -50,36 +52,25 @@ Dashboard interactif présentant des indicateurs économiques clés de la Côte 
 
 ⚠️ *Les données utilisées sont simulées à des fins de démonstration professionnelle.*
 
-### 🔜 Projets à venir
-- 🤖 **Modèle de Machine Learning prédictif**  
-- 📝 **Projet d’analyse NLP**  
-
-*Chaque projet vise à démontrer des compétences techniques solides et une capacité à livrer des solutions concrètes.*
-
 ---
 
 ## 📞 Contact
-
 - **📧 Email :** [ukouassi33@gmail.com](mailto:ukouassi33@gmail.com)  
 - **📱 WhatsApp :** [Cliquez pour discuter](https://wa.me/2250701678337)  
-- **💼 LinkedIn :** En cours de création — disponible bientôt  
 - **⏱ Disponibilité :** Réponse sous 24h  
 - **📍 Localisation :** Abidjan, Côte d’Ivoire | 🌍 Missions à distance possibles  
 
 ---
 
 ## 🎯 Approche professionnelle
-
 1. **🔍 Écoute** — Compréhension approfondie des besoins métiers  
 2. **📊 Analyse** — Méthodologie rigoureuse et transparente  
 3. **🚀 Solution** — Livrables clairs, concrets et actionnables  
-4. **🤝 Accompagnement** — Support jusqu’à l’adoption par les équipes  
+4. **🤝 Accompagnement** — Support jusqu’à l’adoption  
 
 ---
 
-## 🚀 Prêt à valoriser vos données ?
-
-### 📊 Diagnostic Data & Décision (5 jours)
+## 🚀 Diagnostic Data & Décision (5 jours)
 - ✅ Analyse complète des données existantes  
 - ✅ Dashboard de synthèse interactif  
 - ✅ 3 recommandations stratégiques prioritaires  
