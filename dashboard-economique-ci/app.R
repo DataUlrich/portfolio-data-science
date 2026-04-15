@@ -59,10 +59,43 @@ ui <- fluidPage(
   # Titre principal
   titlePanel(
     div(
-      h3("📊 Dashboard Économique - Côte d'Ivoire"),
-      h5("Portfolio professionnel | Consultant Data Science & ML"),
-      style = "text-align: center; margin-bottom: 30px;"
+      style = "text-align:center; padding:10px;",
+      
+      h2("📊 Dashboard Économique - Côte d'Ivoire"),
+      
+      h5("💼 Data Analyst Freelance | Data Science & Analyse Prédictive"),
+      
+      tags$hr(style = "width:50%; margin:auto;"),
+      
+      p("Tableau de bord interactif pour la prise de décision économique")
     )
+  ),
+  
+  fluidRow(
+    
+    column(3,
+           div(class = "well",
+               h4("📈 PIB moyen"),
+               textOutput("kpi_pib")
+           )),
+    
+    column(3,
+           div(class = "well",
+               h4("📊 Inflation moyenne"),
+               textOutput("kpi_inflation")
+           )),
+    
+    column(3,
+           div(class = "well",
+               h4("💰 Dette moyenne"),
+               textOutput("kpi_dette")
+           )),
+    
+    column(3,
+           div(class = "well",
+               h4("📉 Balance moyenne"),
+               textOutput("kpi_balance")
+           ))
   ),
   
   # Layout principal
@@ -113,10 +146,22 @@ ui <- fluidPage(
     mainPanel(
       width = 8,
       
+      div(
+        class = "well",
+        h4("📌 Résumé exécutif"),
+        textOutput("resume_global")
+      ),
+      
       # Graphique principal
       div(
         class = "well",
         plotlyOutput("graphique_principal", height = "400px")
+      ),
+      
+      div(
+        class = "well",
+        h4("💡 Insight stratégique"),
+        textOutput("insight")
       ),
       
       # Statistiques récapitulatives
@@ -191,41 +236,56 @@ server <- function(input, output, session) {
     
     # Configuration selon l'indicateur
     config <- switch(input$indicateur,
+                     
                      "pib" = list(
-                       titre = "Évolution de la croissance du PIB",
-                       y_lab = "Croissance PIB (%)",
+                       titre = "📈 Analyse de la croissance économique (PIB)",
+                       y_lab = "Croissance du PIB (%)",
                        couleur = "#2ecc71"
                      ),
+                     
                      "inflation" = list(
-                       titre = "Évolution du taux d'inflation",
+                       titre = "⚠️ Analyse de l'inflation et stabilité des prix",
                        y_lab = "Inflation (%)",
                        couleur = "#e74c3c"
                      ),
+                     
                      "dette" = list(
-                       titre = "Évolution de la dette publique",
-                       y_lab = "Dette publique (% PIB)",
+                       titre = "💰 Analyse de la dette publique",
+                       y_lab = "Dette (% du PIB)",
                        couleur = "#f39c12"
                      ),
+                     
                      "balance" = list(
-                       titre = "Évolution de la balance commerciale",
+                       titre = "📊 Analyse de la balance commerciale",
                        y_lab = "Balance (Milliards FCFA)",
                        couleur = "#3498db"
-                     ))
+                     )
+    )
+
     
     # Création du graphique
     p <- ggplot(data, aes(x = annee, y = .data[[input$indicateur]])) +
-      geom_line(color = config$couleur, size = 1.5, alpha = 0.8) +
+      
+      geom_line(color = config$couleur, size = 1.3) +
       geom_point(color = config$couleur, size = 3) +
-      geom_area(fill = config$couleur, alpha = 0.2) +
-      labs(title = config$titre,
-           x = "Année",
-           y = config$y_lab) +
-      theme_minimal() +
+      
+      geom_area(fill = config$couleur, alpha = 0.15) +
+      
+      labs(
+        title = config$titre,
+        subtitle = "Analyse économique sur la période sélectionnée",
+        x = "Années",
+        y = config$y_lab
+      ) +
+      
+      theme_minimal(base_size = 14) +
+      
       theme(
-        plot.title = element_text(face = "bold", size = 16, hjust = 0.5),
-        axis.title = element_text(size = 12),
-        panel.grid.minor = element_blank(),
-        plot.background = element_rect(fill = "white", color = NA)
+        plot.title = element_text(face = "bold", size = 16),
+        plot.subtitle = element_text(size = 11, color = "gray40"),
+        axis.title = element_text(face = "bold"),
+        panel.grid.major = element_line(color = "#eaeaea"),
+        panel.grid.minor = element_blank()
       )
     
     ggplotly(p, tooltip = c("x", "y")) %>%
@@ -254,7 +314,7 @@ server <- function(input, output, session) {
     cat("Écart-type :", round(sd(valeur), 2), "\n")
     cat("\n")
     cat("Dernière valeur (", max(data$annee), ") :", 
-        round(valeur[which.max(data$annee)], 2))
+        round(tail(valeur, 1), 2))
   })
   
   # Tableau de données
@@ -321,6 +381,124 @@ server <- function(input, output, session) {
       easyClose = TRUE,
       footer = modalButton("Fermer")
     ))
+  })
+  
+  output$kpi_pib <- renderText({
+    round(mean(donnees()$pib), 2)
+  })
+  
+  output$kpi_inflation <- renderText({
+    round(mean(donnees()$inflation), 2)
+  })
+  
+  output$kpi_dette <- renderText({
+    round(mean(donnees()$dette), 2)
+  })
+  
+  output$kpi_balance <- renderText({
+    round(mean(donnees()$balance), 2)
+  })
+  
+  output$insight <- renderText({
+    
+    data <- donnees()
+    val <- data[[input$indicateur]]
+    
+    moyenne <- mean(val)
+    
+    if(input$indicateur == "pib") {
+      
+      if(moyenne > 6){
+        "📈 Croissance économique forte : environnement favorable aux investissements."
+      } else {
+        "📊 Croissance modérée : économie stable mais prudente."
+      }
+      
+    } else if(input$indicateur == "inflation") {
+      
+      if(moyenne > 3){
+        "⚠️ Inflation élevée : pression sur le pouvoir d'achat et les coûts."
+      } else {
+        "📉 Inflation maîtrisée : stabilité des prix."
+      }
+      
+    } else if(input$indicateur == "dette") {
+      
+      if(moyenne > 50){
+        "⚠️ Niveau d'endettement élevé : vigilance budgétaire nécessaire."
+      } else {
+        "📊 Dette soutenable : situation financière contrôlée."
+      }
+      
+    } else {
+      
+      "📉 Balance commerciale fluctuante : dépendance aux importations/exportations."
+    }
+  })
+  
+  output$resume_global <- renderText({
+    
+    data <- donnees()
+    val <- data[[input$indicateur]]
+    
+    moyenne <- mean(val)
+    min_v <- min(val)
+    max_v <- max(val)
+    
+    if(input$indicateur == "pib"){
+      
+      paste0(
+        "📊 Sur la période analysée, la croissance moyenne du PIB est de ",
+        round(moyenne,2),
+        "% avec un minimum de ",
+        round(min_v,2),
+        "% et un maximum de ",
+        round(max_v,2),
+        "%. Cela indique une dynamique économique globalement ",
+        ifelse(moyenne > 6, "forte et attractive pour l'investissement.",
+               "modérée nécessitant des mesures de stimulation.")
+      )
+      
+    } else if(input$indicateur == "inflation"){
+      
+      paste0(
+        "📊 L'inflation moyenne est de ",
+        round(moyenne,2),
+        "%. Elle varie entre ",
+        round(min_v,2),
+        "% et ",
+        round(max_v,2),
+        "%. Cela traduit une stabilité des prix ",
+        ifelse(moyenne > 3, "fragile nécessitant vigilance.",
+               "globalement maîtrisée.")
+      )
+      
+    } else if(input$indicateur == "dette"){
+      
+      paste0(
+        "📊 La dette publique moyenne est de ",
+        round(moyenne,2),
+        "% du PIB. Elle oscille entre ",
+        round(min_v,2),
+        "% et ",
+        round(max_v,2),
+        "%. Cela indique un niveau ",
+        ifelse(moyenne > 50, "élevé nécessitant une gestion prudente.",
+               "relativement soutenable.")
+      )
+      
+    } else {
+      
+      paste0(
+        "📊 La balance commerciale moyenne est de ",
+        round(moyenne,2),
+        " milliards FCFA, avec des variations entre ",
+        round(min_v,2),
+        " et ",
+        round(max_v,2),
+        ". Cela reflète une structure commerciale en évolution."
+      )
+    }
   })
 }
 
