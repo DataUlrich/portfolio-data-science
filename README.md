@@ -4,7 +4,7 @@
 
 # 👋 Ulrich Kouassi | Data Analyst Freelance
 
-> 🚀 J’aide les entreprises à transformer leurs données en décisions stratégiques grâce à des analyses claires, des dashboards interactifs et des modèles prédictifs.
+> 🚀 J’aide les entreprises à transformer leurs données en décisions stratégiques grâce à l’analyse de données, aux dashboards interactifs et à la modélisation prédictive.
 
 ---
 
@@ -12,17 +12,16 @@
 
 🔹 Data Analyst spécialisé en :
 - Analyse de données & reporting  
-- Création de dashboards décisionnels  
+- Dashboards décisionnels  
 - Analyse prédictive & économétrie  
 
-📍 Basé à Abidjan, Côte d’Ivoire  
+📍 Abidjan, Côte d’Ivoire  
 🌍 Disponible pour missions à distance  
 
 ---
 
 ## 🎓 Formation
 
-- **Master Professionnel – Data Science & Intelligence Artificielle** *(en cours)* — INSSEDS  
 - **Ingénieur Statisticien / Data Analyst** — INSSEDS  
 - **Licence Statistique & Économie Appliquée** — UIST  
 
@@ -30,20 +29,20 @@
 
 ## 💼 Services
 
-| Service | Durée | Prix |
+| Service | Délai | Prix |
 |--------|------|------|
-| 📊 **Diagnostic Data & Décision** | 5 jours | 150 000 FCFA |
-| 📈 **Dashboard interactif** | 2 semaines | À partir de 300 000 FCFA |
-| 🤖 **Analyse prédictive / ML** | 3–4 semaines | À partir de 600 000 FCFA |
+| 🔍 **Diagnostic Data** | 5 jours | 100 000 FCFA |
+| 📊 **Dashboard Pro** | 1–2 semaines | À partir de 250 000 FCFA |
+| 🤖 **Analyse Prédictive (ML)** | 2–4 semaines | À partir de 500 000 FCFA |
 
 ---
 
 ## 🧠 Cas d’usage
 
-- 📈 Analyse des ventes & performance business  
-- 🎯 Segmentation et scoring client  
-- 📊 Suivi de KPI avec dashboards interactifs  
-- 📉 Prévision (demande, churn, tendances)  
+- 📈 Analyse des ventes & performance  
+- 🎯 Segmentation client & scoring  
+- 📊 Tableaux de bord interactifs  
+- 📉 Prévisions (churn, demande, tendances)  
 - 📝 Analyse de données textuelles (NLP)  
 
 ---
@@ -54,8 +53,6 @@
 
 👉 https://ulrich-kouassi.shinyapps.io/dashboard-economique-decisionnel/
 
-Dashboard interactif conçu pour analyser les indicateurs économiques et faciliter la prise de décision.
-
 ---
 
 ### ⚙️ Technologies utilisées
@@ -65,36 +62,35 @@ Dashboard interactif conçu pour analyser les indicateurs économiques et facili
 
 ### 🚀 Fonctionnalités
 
-- 📈 Visualisation interactive des indicateurs économiques  
-- 📊 Statistiques descriptives dynamiques  
-- 🎯 Insights automatiques pour l’aide à la décision  
-- 📋 Tableau de données interactif  
-- 📞 Intégration de contact professionnel  
+- 📈 Visualisations interactives  
+- 📊 Statistiques descriptives  
+- 💡 Insights automatiques  
+- 📋 Tableaux de données dynamiques  
+- 📞 Contact intégré  
 
 ---
 
-⚠️ *Les données utilisées sont simulées à des fins de démonstration.*
+⚠️ *Données simulées à des fins de démonstration.*
 
 ---
 
 ## 🎯 Approche de travail
 
-1. **🔍 Compréhension du besoin**  
-2. **📊 Analyse des données**  
-3. **📈 Création de solutions (dashboard / modèle)**  
-4. **🚀 Livraison + accompagnement**
+1. 🔍 Compréhension du besoin  
+2. 📊 Analyse des données  
+3. 📈 Développement de solutions  
+4. 🚀 Livraison & accompagnement  
 
 ---
 
-## 🚀 Offre clé : Diagnostic Data (5 jours)
+## 🚀 Offre clé : Diagnostic Data
 
-✔ Analyse complète de vos données  
-✔ Dashboard synthétique  
-✔ 3 recommandations stratégiques  
+✔ Analyse complète des données  
+✔ Recommandations stratégiques  
 ✔ Plan d’action concret  
 
-💰 **150 000 FCFA**  
-⏱ **Livraison : 5 jours**
+💰 **100 000 FCFA**  
+⏱ **5 jours**
 
 ---
 
@@ -117,9 +113,9 @@ Dashboard interactif conçu pour analyser les indicateurs économiques et facili
 
 👉 Aider les entreprises à :
 - mieux comprendre leurs données  
-- optimiser leurs décisions  
-- gagner en performance  
+- améliorer leurs décisions  
+- optimiser leur performance  
 
 ---
 
-⭐ N’hésitez pas à consulter le projet et à me contacter pour collaborer !
+⭐ Disponible pour missions freelance et collaborations.
