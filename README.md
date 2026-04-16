@@ -1,89 +1,125 @@
 ![Shiny](https://img.shields.io/badge/Shiny-Live-brightgreen)
 ![R](https://img.shields.io/badge/R-Statistics-blue)
-![Python](https://img.shields.io/badge/Python-ML-yellow)
+![Python](https://img.shields.io/badge/Python-Data-yellow)
 
-# 👋 Ulrich Kouassi | Consultant Data Science & Machine Learning
+# 👋 Ulrich Kouassi | Data Analyst Freelance
 
-> 🚀 Je transforme les données en décisions stratégiques grâce à l’analyse de données, aux dashboards interactifs et aux modèles prédictifs.
+> 🚀 J’aide les entreprises à transformer leurs données en décisions stratégiques grâce à des analyses claires, des dashboards interactifs et des modèles prédictifs.
+
+---
+
+## 🎯 Positionnement
+
+🔹 Data Analyst spécialisé en :
+- Analyse de données & reporting  
+- Création de dashboards décisionnels  
+- Analyse prédictive & économétrie  
+
+📍 Basé à Abidjan, Côte d’Ivoire  
+🌍 Disponible pour missions à distance  
 
 ---
 
 ## 🎓 Formation
-- **Master Professionnel Data Science & Intelligence Artificielle** — INSSEDS *(en cours)*  
-- **Ingénierie Statistique & Data Science** — INSSEDS  
-- **Licence Statistique et Économie Appliquée** — UIST  
+
+- **Master Professionnel – Data Science & Intelligence Artificielle** *(en cours)* — INSSEDS  
+- **Ingénieur Statisticien / Data Analyst** — INSSEDS  
+- **Licence Statistique & Économie Appliquée** — UIST  
 
 ---
 
 ## 💼 Services
 
 | Service | Durée | Prix |
-|-------|-------|------|
-| **📊 Diagnostic Data & Décision** | 5 jours | 150 000 FCFA |
-| **📈 Dashboard Personnalisé** | 2 semaines | À partir de 300 000 FCFA |
-| **🤖 Modèle Prédictif ML** | 3–4 semaines | À partir de 600 000 FCFA |
+|--------|------|------|
+| 📊 **Diagnostic Data & Décision** | 5 jours | 150 000 FCFA |
+| 📈 **Dashboard interactif** | 2 semaines | À partir de 300 000 FCFA |
+| 🤖 **Analyse prédictive / ML** | 3–4 semaines | À partir de 600 000 FCFA |
 
 ---
 
-## 🧠 Cas d’usage maîtrisés
-- 📈 Analyse des ventes et prévision de la demande  
-- 🎯 Scoring client et détection d’anomalies  
-- 📊 Dashboards interactifs pour le pilotage des KPI  
-- 📝 Analyse de texte & NLP (sentiment, classification, documents)  
+## 🧠 Cas d’usage
+
+- 📈 Analyse des ventes & performance business  
+- 🎯 Segmentation et scoring client  
+- 📊 Suivi de KPI avec dashboards interactifs  
+- 📉 Prévision (demande, churn, tendances)  
+- 📝 Analyse de données textuelles (NLP)  
 
 ---
 
 ## 📁 Portfolio
 
-### 📊 Dashboard Économique – Côte d’Ivoire (**Version Live**)
-👉 https://ulrich-kouassi.shinyapps.io/dashboard-economique-ci/
+### 📊 Dashboard Économique – Côte d’Ivoire (**LIVE**)
 
-Dashboard interactif présentant des indicateurs économiques clés de la Côte d’Ivoire, conçu comme démonstration professionnelle pour l’aide à la décision.
+👉 https://ulrich-kouassi.shinyapps.io/dashboard-economique-decisionnel/
 
-**Technologies utilisées :**  
+Dashboard interactif conçu pour analyser les indicateurs économiques et faciliter la prise de décision.
+
+---
+
+### ⚙️ Technologies utilisées
 `R` · `Shiny` · `ggplot2` · `plotly` · `DT` · `dplyr`
 
-**Fonctionnalités :**
-- 📈 Visualisation interactive de plusieurs indicateurs économiques  
-- 📊 Statistiques descriptives dynamiques  
-- 📥 Téléchargement des données  
-- 💼 Intégration de l’offre de services  
-- 📞 Système de contact intégré  
+---
 
-⚠️ *Les données utilisées sont simulées à des fins de démonstration professionnelle.*
+### 🚀 Fonctionnalités
+
+- 📈 Visualisation interactive des indicateurs économiques  
+- 📊 Statistiques descriptives dynamiques  
+- 🎯 Insights automatiques pour l’aide à la décision  
+- 📋 Tableau de données interactif  
+- 📞 Intégration de contact professionnel  
+
+---
+
+⚠️ *Les données utilisées sont simulées à des fins de démonstration.*
+
+---
+
+## 🎯 Approche de travail
+
+1. **🔍 Compréhension du besoin**  
+2. **📊 Analyse des données**  
+3. **📈 Création de solutions (dashboard / modèle)**  
+4. **🚀 Livraison + accompagnement**
+
+---
+
+## 🚀 Offre clé : Diagnostic Data (5 jours)
+
+✔ Analyse complète de vos données  
+✔ Dashboard synthétique  
+✔ 3 recommandations stratégiques  
+✔ Plan d’action concret  
+
+💰 **150 000 FCFA**  
+⏱ **Livraison : 5 jours**
 
 ---
 
 ## 📞 Contact
-- **📧 Email :** [ukouassi33@gmail.com](mailto:ukouassi33@gmail.com)  
-- **📱 WhatsApp :** [Cliquez pour discuter](https://wa.me/2250701678337)  
-- **⏱ Disponibilité :** Réponse sous 24h  
-- **📍 Localisation :** Abidjan, Côte d’Ivoire | 🌍 Missions à distance possibles  
+
+- 📧 Email : **ukouassi33@gmail.com**  
+- 📱 WhatsApp : https://wa.me/2250701678337  
+- ⏱ Réponse sous 24h  
 
 ---
 
-## 🎯 Approche professionnelle
-1. **🔍 Écoute** — Compréhension approfondie des besoins métiers  
-2. **📊 Analyse** — Méthodologie rigoureuse et transparente  
-3. **🚀 Solution** — Livrables clairs, concrets et actionnables  
-4. **🤝 Accompagnement** — Support jusqu’à l’adoption  
+## 🔧 Stack technique
+
+`R` · `Python` · `SQL` · `Excel` · `Power BI`  
+`Shiny` · `Streamlit` · `Machine Learning` · `Économétrie` · `Git`
 
 ---
 
-## 🚀 Diagnostic Data & Décision (5 jours)
-- ✅ Analyse complète des données existantes  
-- ✅ Dashboard de synthèse interactif  
-- ✅ 3 recommandations stratégiques prioritaires  
-- ✅ Plan d’action clair et opérationnel  
+## 💡 Objectif
 
-**💰 Investissement : 150 000 FCFA**  
-**⏱ Livraison : 5 jours ouvrés**
-
-📧 [Demander un diagnostic](mailto:ukouassi33@gmail.com?subject=Demande%20de%20diagnostic%20data)  
-💬 [Discuter sur WhatsApp](https://wa.me/2250701678337?text=Bonjour%20Ulrich,%20je%20suis%20intéressé%20par%20un%20diagnostic%20data)
+👉 Aider les entreprises à :
+- mieux comprendre leurs données  
+- optimiser leurs décisions  
+- gagner en performance  
 
 ---
 
-### 🔧 Technologies maîtrisées
-`R` · `Python` · `Shiny` · `Streamlit` · `Power BI` · `SQL`  
-`Machine Learning` · `NLP` · `Git`
+⭐ N’hésitez pas à consulter le projet et à me contacter pour collaborer !
